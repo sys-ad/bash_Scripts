@@ -3,4 +3,4 @@
 # Checks IP addresses network connected to.
 
 protocol=TCP
-router='[
+router='[0-9][0-9]'
