@@ -4,6 +4,7 @@
 # Remember, you might be traversing a directory, a file, a character...
 TESTCHARS=2
 HASHBANG='#!'
+read
 for file in *
 do
 if [[ `head c$TESTCHARS '$file'` = $HASHBANG ]]
