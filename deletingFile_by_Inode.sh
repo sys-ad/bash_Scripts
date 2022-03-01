@@ -12,3 +12,4 @@ then
   exit 72
 fi
 
+inum=`ls -i | grep $1 | awk {$!
