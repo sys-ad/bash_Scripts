@@ -12,4 +12,10 @@ then
   exit 72
 fi
 
-inum=`ls -i | grep $1 | awk {$!
+inum=`ls -i | grep $1 | awk '{print $1}'`
+
+find . -inum $inum -exec rm {} \;
+
+echo "File "\"$1"\" deleted!"
+
+exit 0
