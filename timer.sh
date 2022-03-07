@@ -13,4 +13,5 @@ while [ $(( $(date +%s) - $date1 )) -lt "$1" ]; do
 echo -ne "$(date -u --date @$(( $(date +%s) - $date1 )) +%H:%M:%S)\r"
 
 done
-sudo ./steelbell.mp3
+
+cvlc -q steelbell.mp3 2>/dev/null
