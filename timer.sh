@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# Basic timer, usage: ./timer.sh <amount of time in seconds>     example: $timer.sh 900 (will run for 15min)
 
 date1=$(date +%s)
 
@@ -14,4 +15,4 @@ echo -ne "$(date -u --date @$(( $(date +%s) - $date1 )) +%H:%M:%S)\r"
 
 done
 
-cvlc -q steelbell.mp3 2>/dev/null
+#cvlc -q steelbell.mp3 2>/dev/null # .mp3 file located in current dir, may be used as an alarm sound. Output redirected to /dev/null
