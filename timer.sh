@@ -15,5 +15,5 @@ echo -ne "$(date -u --date @$(( $(date +%s) - $date1 )) +%H:%M:%S)\r"
 
 done
 
-#cvlc -q steelbell.mp3 2>/dev/null # .mp3 file located in current dir, may be used as an alarm sound. Output redirected to /dev/null. 
+#cvlc -q steelbell.mp3 2>/dev/null # .mp3 file located in current dir, may be used as an alarm sound. Verbose display output redirected to /dev/null. 
                                    #  uses cvlc for playback
