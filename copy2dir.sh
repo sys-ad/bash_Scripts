@@ -4,4 +4,5 @@
 
 E_ARG=66
 
-if [ -z "$1" ];
+if [ -z "$1" ]; then
+echo "`baseline 
