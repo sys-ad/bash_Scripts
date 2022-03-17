@@ -5,4 +5,12 @@
 E_ARG=66
 
 if [ -z "$1" ]; then
-echo "`baseline 
+echo "Usage: `basename $0` <dir/to/copy>"
+exit E_ARG
+fi
+
+sudo find "$1" -type f -exec cp {} . \;
+
+echo -n "Files copied"
+
+exit 0
