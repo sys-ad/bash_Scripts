@@ -14,3 +14,6 @@ sudo find "$1" -type f -exec cp {} . \;
 echo -n "Files copied"
 
 exit 0
+
+# using xargs,
+# ls . | xargs -i -t cp ./{} "$1"
