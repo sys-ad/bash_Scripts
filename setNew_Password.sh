@@ -6,6 +6,7 @@ echo -n "Enter user name: "
 read USER_NAME
 
 # check if username exist
+if [ -z 
 
 # invoke useradd, with flags or not
 
