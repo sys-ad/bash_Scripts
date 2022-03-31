@@ -16,10 +16,9 @@ fi
 # Set password
 echo -n "Enter new password: "
 read NEW__PW
-# invoke useradd, with flags or not
+echo "$NEW_PW" | passwd --stdin "$USER_NAME"
 
 # set password, piping stdin (password) to passwd command
-echo 
 
 echo "User '$USER_NAME' has been set.
 
