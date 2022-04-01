@@ -18,7 +18,6 @@ echo -n "Enter new password: "
 read NEW__PW
 echo "$NEW_PW" | passwd --stdin "$USER_NAME"
 
-# set password, piping stdin (password) to passwd command
 
 echo "User '$USER_NAME' has been set.
 
