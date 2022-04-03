@@ -22,4 +22,4 @@ echo "$NEW_PW" | passwd --stdin "$USER_NAME"
 echo "User '$USER_NAME' has been set.
 
 exit 0
-
+#
