@@ -2,5 +2,9 @@
 
 # Checks IP addresses network connected to.
 
-protocol=TCP
-router='[0-9][0-9]'
+connection_type=TCP
+field=2
+
+lsof -ni | grep $connection_type | grep -v "$no_match" |
+      awk '{print $9}' | cut -d : -f $field | sort | uniq |
+      sed s/"^$router"//
